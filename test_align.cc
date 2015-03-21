@@ -38,6 +38,7 @@ int main() {
   al.blen = 16;
 
   printf("go al\n");
+  // (2,2, 4) su suradnice
   Local_Alignment(&al, work_data, align_spec, 2, 2, 4); 
   
   FILE *ca = fopen("cartoon.dat", "w");
@@ -47,5 +48,6 @@ int main() {
   printf("trace\n");
   Compute_Trace_MID(&al, work_data, 2);
   printf("print al\n");
+  // Zisti ako toto presne funguje
   Print_Alignment(aa, &al, work_data, 2, 80, 5, 1, 1); 
 }
