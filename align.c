@@ -497,6 +497,7 @@ static int forward_wave(_Work_Data *work, _Align_Spec *spec,
 
         while (1)
           { c = bseq[y];
+	    printf("wtf %d %c\n", y, c); 
             if (c == 4)
               { more = 0;
                 if (bclip < k)
